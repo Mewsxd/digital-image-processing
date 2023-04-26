@@ -1,29 +1,17 @@
 //Contrast Thresholding
 
 auigetfile("select the image:-):
-
 a-imread(a):
-
 T-58;
-
 [r.c]-size(a);
-
 for i-Ir
-
-for j 1:c
-
-if(a(ij)<='T)
-
-x(i,j)=0;
-
-else
-
-x(i,j)-255,
-
+  for j 1:c
+    if(a(ij)<='T)
+      x(i,j)=0;
+    else
+      x(i,j)-255,
+    end
+  end
 end
-
-end
-
-end
-
-x-uint8(x); imshow(x);
+x-uint8(x); 
+imshow(x);
