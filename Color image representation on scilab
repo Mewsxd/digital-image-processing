@@ -1,15 +1,17 @@
-a=uigetfile(Select the Image:-');
+a=uigetfile('*.*','Select the Image:-');
 
 a=imread(a);
 
-Red Component=a(:,1);
+Red_Component=a(:,:,1);
+Green_Component=a(:,:,2); 
+Blue_Component=a(:,:,3);
+subplot(131);
+imshow(Red_Component); 
+title('Red Component Image'); 
+subplot(132);
+imshow(Green_Component); 
+title('Green Component Image");
 
-Green Component=a(:,:,2); Blue_Component=a(:,:,3);
-
-subplot(131);imshow(Red Component); title('Red Component Image'); subplot(132).imshow(Green Component); title('Green
-
-Component Image");
-
-subplot(133);imshow(Blue_Component); title('Blue
-
-Component Image');
+subplot(133);
+imshow(Blue_Component); 
+title('Blue Component Image');
