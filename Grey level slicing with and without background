@@ -1,0 +1,23 @@
+gemilerSelect the Image - Y a=imread(a).
+
+a1=58;
+
+I = 158 ;
+
+[r.cz (a); for i = 1 r
+
+for j = 1c
+
+if( a(i, j) > a * 18a(i, j) <b1) x(l, j) = 255
+
+else
+
+x(i, j) = 0
+
+end
+
+end
+
+end
+
+x#uint8(x); imshow(x);
